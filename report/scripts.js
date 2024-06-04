@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (searchForm) {
         searchForm.addEventListener('submit', function(event) {
             event.preventDefault();
-            const searchResults = document.getElementById('searchResults .grid');
+            const searchResults = document.querySelector('#searchResults .grid');
             searchResults.innerHTML = '<p>No results found. (This is just a demo, search functionality not implemented.)</p>';
         });
     }
