@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1em;
+    text-align: center;
+}
+
+header nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2em;
+    margin: 2em auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5em 0 0.2em;
+}
+
+form input {
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+button {
+    padding: 0.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}

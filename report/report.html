@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Lost Item</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lost and Found</h1>
+        <nav>
+            <a href="report.html">Report Lost Item</a>
+            <a href="search.html">Search Lost Items</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Report a Lost Item</h2>
+            <form id="reportForm">
+                <label for="itemName">Item Name:</label>
+                <input type="text" id="itemName" name="itemName" required>
+
+                <label for="dateLost">Date Lost:</label>
+                <input type="date" id="dateLost" name="dateLost" required>
+
+                <label for="itemImage">Upload Image:</label>
+                <input type="file" id="itemImage" name="itemImage" accept="image/*">
+
+                <label for="lastLocation">Last Location:</label>
+                <input type="text" id="lastLocation" name="lastLocation" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Recently Lost Items</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="item1.jpg" alt="Item 1">
+                    <p>Item Name: Wallet</p>
+                    <p>Date Lost: 2024-06-01</p>
+                    <p>Last Location: Park</p>
+                </div>
+                <div class="grid-item">
+                    <img src="item2.jpg" alt="Item 2">
+                    <p>Item Name: Keys</p>
+                    <p>Date Lost: 2024-06-02</p>
+                    <p>Last Location: Office</p>
+                </div>
+                <div class="grid-item">
+                    <img src="item3.jpg" alt="Item 3">
+                    <p>Item Name: Phone</p>
+                    <p>Date Lost: 2024-06-03</p>
+                    <p>Last Location: Coffee Shop</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
