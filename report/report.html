@@ -25,7 +25,7 @@
                 <label for="dateLost">Date Lost:</label>
                 <input type="date" id="dateLost" name="dateLost" required>
 
-                <label for="itemImage">Upload Image:</label>
+                <label for="itemImage">Upload Image (optional):</label>
                 <input type="file" id="itemImage" name="itemImage" accept="image/*">
 
                 <label for="lastLocation">Last Location:</label>
@@ -37,7 +37,7 @@
 
         <section>
             <h2>Recently Lost Items</h2>
-            <div class="grid">
+            <div class="grid" id="lostItemsGrid">
                 <div class="grid-item">
                     <img src="item1.jpg" alt="Item 1">
                     <p>Item Name: Wallet</p>
