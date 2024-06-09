@@ -1,21 +1,35 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('background.jpg');
+    background-image: url('bgg.jpg');
     background-size: cover;
+    background-position: center;
     margin: 0;
     color: #333;
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(105, 142, 211, 0.8);
     padding: 1em;
     text-align: center;
 }
 
 header nav a {
     margin: 0 1em;
+    padding: 0.5em 1em; /* Add padding to make the button more prominent */
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
+    background-color: #0f1110; /* Add a background color */
+    border: 2px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    position: relative; /* Position relative for further adjustments */
+    top: 80px; /* Move it more to the bottom */
+    transition: background-color 0.3s, color 0.3s, top 0.3s; /* Smooth transition for hover effects */
+}
+
+header nav a:hover {
+    background-color: #75bcd2; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+    top: 82px; /* Slightly move the button on hover for a subtle effect */
 }
 
 main {
@@ -47,6 +61,12 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
+    
+}
+button:hover {
+    background-color: #419852; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+    top: 82px; /* Slightly move the button on hover for a subtle effect */
 }
 
 .grid {
